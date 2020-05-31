@@ -14,10 +14,11 @@ class bookaddition extends Controller
     }
     public function insertbook(Request $request){
     	$newbook = new book;
-    	$newbook->bookId = Request("Id");
-    	$newbook->bookname = Request("name");
-    	$newbook->bookauther = Request("auther");
-    	$newbook->image = Request("fileToUpload");
+    	$newbook->Bname = Request("name");
+    	$newbook->Bauther = Request("auther");
+    	$newbook->Bpicture = Request("fileToUpload");
+        $newbook->Bprice = Request("price");
+        $newbook->Bcount = Request("count");
     	$newbook->save();
 
     	//echo "DONE";

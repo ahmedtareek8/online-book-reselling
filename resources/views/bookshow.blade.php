@@ -5,18 +5,20 @@
         <table class="table table-bordered">
             <thead>
             <tr>
-                <th>Book_ID</th>
                 <th>Book_name</th>
                 <th>Book_auther</th>
                 <th>book_image</th>
+                <th>book_price</th>
+                <th>book_count</th>
             </tr>
             </thead>
             @foreach($Books as $book)
                 <tr>
-                    <td>{{$book->bookId}}</td>
-                    <td>{{$book->bookname}}</td>
-                    <td>{{$book->bookauther}}</td>
-                    <td>{{$book->image}} </td>
+                    <td>{{$book->Bname}}</td>
+                    <td>{{$book->Bauther}}</td>
+                    <td>{{$book->Bpicture}}</td>
+                    <td>{{$book->Bprice}}</td>
+                    <td>{{$book->Bcount}}</td>
                 </tr>
             @endforeach
             </tbody>

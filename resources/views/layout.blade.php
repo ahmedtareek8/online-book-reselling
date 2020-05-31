@@ -24,9 +24,12 @@
 }
   
   .myDiv {
-  border: 5px outset red;
-  background-color: lightcoral;    
+  border: 1px solid #888;
+  padding: 16px;   
   text-align: center;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  width: 80%; 
 }
 	
 		.header {
@@ -46,10 +49,27 @@
   line-height: 25px;
   border-radius: 4px;
 }
+input[type=text] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=submit]{
+  background-color:dodgerblue;
+  color: white;
+  padding: 14px 50px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+}  
 	</style>
 	<title></title>
 </head>
-<body>
+<body style="background-color: gainsboro">
 <div class="header">
   <a href="https://commons.wikimedia.org/wiki/File:HTTP_logo.svg" class="logo">myonline_reposetory</a>
   <div class="header-right">
