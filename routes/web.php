@@ -38,5 +38,6 @@ Route::post ('/insertbook', 'bookaddition@insertbook');
 Route::get('/showBooks', 'bookaddition@showingbook');
 Route::post('/insertregisterationdata', 'users@insertuserdata');//for registration
 Route::post('/loginvalidate', 'users@login');//for login
+Route::post('/logout', 'users@logout');//for logout
 
 

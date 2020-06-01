@@ -23,7 +23,7 @@ class users extends Controller
       $User->save();
       return redirect("/login");
     }
-    
+
 
      public function login(request $req){
 
@@ -45,6 +45,10 @@ class users extends Controller
        return Redirect()->back()->with(['message' => 'invalid user name or password']);
     
 }
+
+ public function logout(){
+ 	 return redirect("/login");
+ }
  
 
 }

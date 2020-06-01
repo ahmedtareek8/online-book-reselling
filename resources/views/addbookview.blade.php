@@ -1,5 +1,7 @@
 @extends("layout")
 @section("content")		
+
+
 <div class="ourdiv">
 	<div class="myDiv">
 		<form action="/insertbook" method="post">

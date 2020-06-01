@@ -16,6 +16,23 @@
   width: 100%;
 }
 
+.cancelbtn {
+  width: auto;
+  padding: 10px 16px;
+  margin: auto 20% -10% 95%;
+  background-color: #f44336;
+}
+
+button {
+  background-color:dodgerblue;
+  color: white;
+  padding: 14px 50px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
     .table, .td, .th {
   border: 1px solid black;
   text-align: left;
@@ -77,6 +94,10 @@ input[type=submit]{
     <a href="https://www.facebook.com/?ref=tn_tnmn">Contact</a>
     <a href="#about">About</a>
   </div>
+  <form action="{{ url('/logout')}}" method="POST" class="logout" >
+        @csrf
+     <button type="submit" class="cancelbtn">logout</button>
+  </form>
   </div>
   @yield ("content")
 
