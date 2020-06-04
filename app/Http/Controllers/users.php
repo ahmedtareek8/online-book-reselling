@@ -35,8 +35,10 @@ class users extends Controller
      	   	 $check=1;
      	    if($i->Utype==1){
      	      return redirect("/showBooks");
-     	    }else{
+     	    }elseif($i->Utype==2){
      	      return redirect("/useraddbook");
+           }else{
+           	  return redirect("/showadminhome");
            }
      	}
 
