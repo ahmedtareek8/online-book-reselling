@@ -28,11 +28,10 @@ class users extends Controller
      public function login(request $req){
 
      	$data=user::all();
-          $check=0;
+         
      	foreach ($data as $key => $i) {
      	  if($req->uname==$i->Uusername){
      	   if($req->password==$i->Upassword){
-     	   	 $check=1;
      	    if($i->Utype==1){
      	      return redirect("/showBooks");
      	    }elseif($i->Utype==2){
