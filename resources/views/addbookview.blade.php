@@ -6,6 +6,9 @@
 	<div class="myDiv">
 		<form action="/insertbook" method="post">
 			@csrf
+            @if (Session::has('message'))
+              <div class="alert alert-error>">{{Session::get('message')}}</div>
+            @endif
             <label for="name">bookName</label><br>
             <input type="text" id="name" name="name"><br>
             <label for="price">bookprice</label><br>

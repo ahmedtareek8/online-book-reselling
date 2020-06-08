@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\book ;
+use Illuminate\Support\Facades\Redirect;
+
 
 class bookaddition extends Controller
 {
@@ -22,7 +24,7 @@ class bookaddition extends Controller
     	$newbook->save();
 
     	//echo "DONE";
-    	return redirect ("/showBooks");
+    	return Redirect()->back()->with(['message' => 'book added sucssesfuly']);
     }
     public function showingbook (){
     	$Books = book::all();
